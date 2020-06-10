@@ -1,0 +1,26 @@
+{
+  "name": "neoflow/github-api-client",
+  "description": "GitHub API Client",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "autoload": {
+    "classmap": [
+      "src/classes"
+    ],
+    "files": []
+  },
+  "scripts": {
+    "php-cs-fixer": "php-cs-fixer",
+    "serve": "php -S localhost:8080 -t demo/"
+  },
+  "config": {
+    "process-timeout": 0
+  },
+  "require": {
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16"
+  }
+}

@@ -1,2 +1,2 @@
 # GitHubApiClient
-Small PHP-based, client for the GitHub API.
+Small PHP-based, client for the GitHub API v3.
