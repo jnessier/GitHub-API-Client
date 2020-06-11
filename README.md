@@ -37,8 +37,8 @@ User-Agent header will be rejected by the GitHub API. GitHub request, that you u
 your application. This allows GitHub to contact you, if there are problems. [Read more](https://developer.github.com/v3/#user-agent-required)
 
 ## Advanced configuration
-The GitHub API-Client supports a few options as a 2nd constructor argument. If you need to know more about it, take a 
-look into the code by yourself. The code and  comments should be easy to understand and self-explanatory.
+The GitHub API-Client supports an array with custom options as a second constructor argument. If you need to know more 
+about it, take a look into the code by yourself. The code and  comments should be easy to understand and self-explanatory.
 
 For more information about the GitHub API v3, visit the official [guidelines](https://developer.github.com/v3/).
 
