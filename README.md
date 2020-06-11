@@ -1,5 +1,5 @@
 # GitHub API-Client
-A simple, read-only client for the GitHub API v3, written in PHP.
+A simple, **read-only** client for the GitHub API v3, written in PHP.
 
 ## Requirement
 * PHP >= 7.3
@@ -14,7 +14,7 @@ composer require neoflow/github-api-client
 ```
 
 ### Manually
-Download and unpack the latest release from [here](https://github.com/Neoflow/GitHub-API-Client/releases). 
+Download and unpack locally the latest release from [here](https://github.com/Neoflow/GitHub-API-Client/releases).
 
 ## Basic usage
 ```php
@@ -37,16 +37,8 @@ User-Agent header will be rejected by the GitHub API. GitHub request, that you u
 your application. This allows GitHub to contact you, if there are problems. [Read more](https://developer.github.com/v3/#user-agent-required)
 
 ## Advanced configuration
-The GitHub API-Client supports a few custom options as a secondary argument. 
-
-|Parameter|Description|
-|---|---|
-|```api['baseUrl]```|Base URL of the GitHub API v3.<br />Default: https://api.github.com|
-|```cache['lifetime']```|Cache lifetime of each API request (in seconds).<br />Default: 300|
-|```cache['lifetime']```|Cache directory for the cache file.<br />Default: result of ```sys_get_temp_dir()```|
-|```curl```|Array of additional cURL options|
-
-If you need to know more, take a look into the code by yourself. It should be easy to understand.
+The GitHub API-Client supports a few options as a 2nd constructor argument. If you need to know more about it, take a 
+look into the code by yourself. The code and  comments should be easy to understand and self-explanatory.
 
 For more information about the GitHub API v3, visit the official [guidelines](https://developer.github.com/v3/).
 
