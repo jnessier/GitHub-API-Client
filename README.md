@@ -14,7 +14,7 @@ composer require neoflow/github-api-client
 ```
 
 ### Manually
-Download and unpack the latest release from here [here](https://github.com/Neoflow/GitHub-API-Client/releases). 
+Download and unpack the latest release from [here](https://github.com/Neoflow/GitHub-API-Client/releases). 
 
 ## Basic usage
 ```php
@@ -32,9 +32,9 @@ if ($response['header']['http_code'] === 200) {
     echo 'Latest release: ' . $response['content']['tag_name'];
 }
 ```
-**Important** You MUST set an identifier, which will be sent by the client as a User-Agent header to the GitHub API. 
-
-[Read more](https://developer.github.com/v3/#user-agent-required)
+**Important** You MUST set an identifier, which will be sent by the client as a User-Agent header. Requests with no 
+User-Agent header will be rejected by the GitHub API. GitHub request, that you use your GitHub username, or the name of 
+your application. This allows GitHub to contact you, if there are problems. [Read more](https://developer.github.com/v3/#user-agent-required)
 
 ## Advanced configuration
 The GitHub API-Client supports a few custom options as a secondary argument. 
@@ -48,7 +48,7 @@ The GitHub API-Client supports a few custom options as a secondary argument.
 
 If you need to know more, take a look into the code by yourself. It should be easy to understand.
 
-For more information about the GitHub API v3, study the official [guidelines](https://developer.github.com/v3/).
+For more information about the GitHub API v3, visit the official [guidelines](https://developer.github.com/v3/).
 
 ## Author(s)
 * Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
