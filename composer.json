@@ -11,15 +11,22 @@
     ],
     "files": []
   },
+  "autoload-dev": {
+    "classmap": [
+      "tests/classes"],
+    "files": []
+  },
   "scripts": {
-    "test": "phpunit tests",
-    "run php-cs-fixer": "php-cs-fixer"
+    "test": "phpunit",
+    "php-cs-fixer": "php-cs-fixer fix",
+    "php-cs-fixer dry-run": "php-cs-fixer fix --dry-run"
   },
   "config": {
     "process-timeout": 0
   },
   "require": {
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^2.16",

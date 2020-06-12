@@ -31,8 +31,8 @@ class GitHubApiClient
     /**
      * Constructor.
      *
-     * @param string $identifier GitHub username, or the name of your GitHub application/project
-     * @param array $options Custom initial options
+     * @param string $identifier GitHub username, or the name of your application/project
+     * @param array $options Custom options
      */
     public function __construct(string $identifier, array $options = [])
     {
@@ -73,7 +73,7 @@ class GitHubApiClient
     {
         $cache = $this->getCache($url);
 
-        if (!$cache) {
+        if (!is_array($cache)) {
             $this->options['curl'][CURLOPT_URL] = $url;
 
             $ch = curl_init();
@@ -130,7 +130,7 @@ class GitHubApiClient
      *
      * @param string $url Requested URL
      *
-     * @return array
+     * @return array|null
      */
     protected function getCache(string $url): ?array
     {

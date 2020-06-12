@@ -1,16 +1,15 @@
 <?php
 
-PhpCsFixer\Config::create()->setCacheFile(__DIR__.'/.php_cs.cache');
+PhpCsFixer\Config::create()->setCacheFile(__DIR__ . '/.php_cs.cache');
 
 // Define excludes
-$excludes = [
-    'vendor',
-];
+$excludes = [];
 
 // Create finder
 $finder = PhpCsFixer\Finder::create()
     ->exclude($excludes)
-    ->in(__DIR__);
+    ->in('src')
+    ->in('tests');
 
 // Create config
 return PhpCsFixer\Config::create()
