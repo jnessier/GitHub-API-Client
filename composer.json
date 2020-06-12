@@ -12,8 +12,8 @@
     "files": []
   },
   "scripts": {
-    "php-cs-fixer": "php-cs-fixer",
-    "serve": "php -S localhost:8080 -t demo/"
+    "test": "phpunit tests",
+    "run php-cs-fixer": "php-cs-fixer"
   },
   "config": {
     "process-timeout": 0
@@ -22,6 +22,7 @@
     "ext-curl": "*"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.16"
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "^9.2"
   }
 }

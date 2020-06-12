@@ -1,13 +1,16 @@
 # GitHub API-Client
 An easy-to-use, readonly client for the GitHub API v3, written in PHP.
 
-**Please note** The GitHub API-Client only supports readonly and unauthenticated GET requests, with a rate limit for up 
-to 60 requests per hour. If you need a full featured client with support PULL/POST/DELETE requests, try out the well tested and documented 
-[php-github-api](https://github.com/KnpLabs/php-github-api).
+**Please note** The GitHub API-Client only supports unauthenticated GET requests, with a rate limit for up 
+to 60 requests per hour. Read more [here](https://developer.github.com/v3/#rate-limiting) about the rate limit. 
+
+If you need a full featured client, with support for authenticated requests, try out the well tested and 
+documented [php-github-api](https://github.com/KnpLabs/php-github-api).
 
 ## ToDo
-[ ] Implement UnitTests
-[ ] Publish as Composer package
+* [x] Create readme
+* [ ] Implement UnitTests
+* [ ] Publish as Composer package
 
 ## Requirement
 * PHP >= 7.3
@@ -43,8 +46,8 @@ if ($response['header']['http_code'] === 200) {
 
 **Important** You MUST set an identifier, which will be sent by the client as a User-Agent header. Requests with no 
 User-Agent header will be rejected by the GitHub API. GitHub request, that you use your GitHub username, or the name of 
-your application. This allows GitHub to contact you, if there are problems. Read more [here](https://developer.github.com/v3/#user-agent-required)
-about the restriction.
+your application. This allows GitHub to contact you, if there are problems. Read more [here](https://developer.github.com/v3/#user-agent-required) 
+about the User-Agent header restriction.
 
 ## Advanced configuration
 The GitHub API-Client supports an optional array for custom options as a second constructor argument. If you want to 
