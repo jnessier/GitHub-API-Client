@@ -3,6 +3,7 @@
   "description": "GitHub API Client",
   "type": "library",
   "license": "MIT",
+  "version": "0.0.1-beta",
   "minimum-stability": "stable",
   "autoload": {
     "classmap": [
