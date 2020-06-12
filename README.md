@@ -1,5 +1,5 @@
 # GitHub API-Client
-An easy-to-use, readonly client for the GitHub API v3, written in PHP with file-based cache support.
+An easy-to-use, readonly client for the GitHub API v3, written in PHP with file-based cache support and without dependencies.
 
 **Please note** The GitHub API-Client only supports unauthenticated GET requests, with a rate limit for up 
 to 60 requests per hour. Read more [here](https://developer.github.com/v3/#rate-limiting) about the rate limit. 
