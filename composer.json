@@ -17,19 +17,20 @@
     "files": []
   },
   "scripts": {
-    "test": "phpunit",
-    "php-cs-fixer": "php-cs-fixer fix",
-    "php-cs-fixer dry-run": "php-cs-fixer fix --dry-run"
+    "run php-cs-fixer": "php-cs-fixer fix",
+    "run php-cs-fixer dry": "php-cs-fixer fix --dry-run",
+    "run phpunit": "phpunit --configuration phpunit.xml.dist"
   },
   "config": {
     "process-timeout": 0
   },
   "require": {
+    "php": ">=7.3",
     "ext-curl": "*",
     "ext-json": "*"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.16",
+    "friendsofphp/php-cs-fixer": "^3",
     "phpunit/phpunit": "^9.2"
   }
 }
