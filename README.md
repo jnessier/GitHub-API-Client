@@ -43,8 +43,8 @@ if ($response['header']['http_code'] === 200) {
 ```
 
 **Important** You MUST set an identifier, which will be sent by the client as a User-Agent header. Requests with no 
-User-Agent header will be rejected by the GitHub API. GitHub want you to you use your GitHub username, or the name of 
-your application or porject as identifier. This allows GitHub to contact you, if there are any problems. Read more [here](https://developer.github.com/v3/#user-agent-required) 
+User-Agent header will be rejected by the GitHub API. GitHub want you to use your GitHub username, or the name of 
+your application or project as identifier. This allows GitHub to contact you, if there are any problems. Read more [here](https://developer.github.com/v3/#user-agent-required) 
 about the User-Agent header restriction.
 
 ## Advanced configuration
