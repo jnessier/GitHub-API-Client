@@ -53,7 +53,7 @@ The GitHub API-Client supports an optional array for custom options as a 2nd con
 For more information about the GitHub API v3, please visit the official [guidelines](https://developer.github.com/v3/).
 
 ## Author(s)
-* Jonathan Nessier, [Neoflow](https://www.neoflow.ch)
+* Jonathan Nessier
 
 ## License
 This piece of software is [unlicensed](https://github.com/Neoflow/GitHub-API-Client/blob/master/LICENSE). Use it however 
